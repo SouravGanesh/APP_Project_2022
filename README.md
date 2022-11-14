@@ -1,5 +1,6 @@
 # APP_Project_2022
 Git Repo - https://github.com/SouravGanesh/APP_Project_2022/
+
 Architectural pattern followed MVC
 
 Model layer contains:
