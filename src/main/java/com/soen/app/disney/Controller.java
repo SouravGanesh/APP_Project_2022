@@ -25,6 +25,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @WebServlet("/register")
 public class Controller extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	DisneyCharacterSeviceImpl disneyCharacterService = new DisneyCharacterSeviceImpl();
 
 	DisneyCharacterDO characterResponse = null;
@@ -35,9 +40,8 @@ public class Controller extends HttpServlet {
 
 	//Runs very first time when the object for this class is created.
 	public void init() throws ServletException {
-		System.out.println("----------");
-		System.out.println("---------- Server Initialized successfully ----------");
-		System.out.println("----------");
+		System.out.println("Starting Server!!!");
+		
 		try {
 			getJsonDataForDisneyCharacters();
 		} catch (IOException e) {

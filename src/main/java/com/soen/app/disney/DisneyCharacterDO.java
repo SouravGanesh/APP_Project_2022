@@ -141,6 +141,7 @@ public class DisneyCharacterDO {
 		this.allies = allies;
 		this.enemies = enemies;
 	}
+	
 
 	public DisneyCharacterDO() {
 
@@ -154,24 +155,32 @@ public class DisneyCharacterDO {
 
 	}
 
+
+
 	public DisneyCharacterDO(String name, String imageUrl, String tvShow, String films) {
 		this.name = name;
 		this.imageUrl = imageUrl;
 		this.finalShowName=tvShow;
 		this.finalFilmName=films;
 	}
+	
+	  @Override
+	    public String toString() {
+		  return "";
+	        /*return "DisneyCharacterDO{" +
+	                "films=" + Arrays.toString(films) +
+	                ", shortFilms=" + Arrays.toString(shortFilms) +
+	                ", _id=" + _id +
+	                ", name='" + name + '\'' +
+	                ", imageUrl='" + imageUrl + '\'' +
+	                ", url='" + url + '\'' +
+	                ", videoGames=" + Arrays.toString(videoGames) +
+	                ", tvShows=" + Arrays.toString(tvShows) +
+	                ", parkAttractions=" + Arrays.toString(parkAttractions) +
+	                ", allies=" + Arrays.toString(allies) +
+	                ", enemies=" + Arrays.toString(enemies) +
+	                '}';*/
+	    }
 
-	@Override
-	public String toString() {
-		return "";
-		
-		 /*return "DisneyCharacterDO{" + "films=" + Arrays.toString(films) +
-		 ", shortFilms=" + Arrays.toString(shortFilms) + ", _id=" + _id + ", name='" +
-		 name + '\'' + ", imageUrl='" + imageUrl + '\'' + ", url='" + url + '\'' +
-		 ", videoGames=" + Arrays.toString(videoGames) + ", tvShows=" +
-		 Arrays.toString(tvShows) + ", parkAttractions=" +
-		 Arrays.toString(parkAttractions) + ", allies=" + Arrays.toString(allies) +
-		 *", enemies=" + Arrays.toString(enemies) + '}';
-		 */
-	}
+
 }

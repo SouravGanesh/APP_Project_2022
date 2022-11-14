@@ -10,8 +10,8 @@ countryEle.addEventListener('click', getGlobal);
 function createCards(data) {
   for (let i = 0; i < data.length; i++) {
     const divEle = document.createElement('div');
-    divEle.className = 'card';
-    divEle.style = 'width: 18rem;';
+    divEle.className = 'card ';
+    divEle.style = 'width: 18rem; border-style: solid;';
 
     const imgEle = document.createElement('img');
     imgEle.src = data[i].imageUrl;
@@ -22,12 +22,12 @@ function createCards(data) {
     pEle.className = 'card-text';
     
     const p1Ele = document.createElement('p');
-    p1Ele.innerHTML ="Movie acted : " +  data[i].finalFilmName;
+    p1Ele.innerHTML ="Movie : " +  data[i].finalFilmName;
     p1Ele.className = 'card-text';
     
     
     const p2Ele = document.createElement('p');
-    p2Ele.innerHTML = "TV Shows " + data[i].finalShowName;
+    p2Ele.innerHTML = "TV Shows :" + data[i].finalShowName;
     p2Ele.className = 'card-text';
     
     
